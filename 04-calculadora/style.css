@@ -1,0 +1,62 @@
+:root {
+  --background: #2e2d2d;
+  --pink-400: #f561d5;
+  --pink-500: #ce03a2;
+  --white: #ffffff;
+  --gray-200: #c7c7c7;
+  --gray-350: #878787;
+  --gray-400: #626262;
+  --gray-500: #545454;
+  --gray-600: #474747;
+  --gray-700: #3b3b3b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(45deg, var(--pink-400), var(--pink-500));
+  height: 100vh;
+  color: var(--white);
+  text-align: center;
+}
+
+.calculater {
+  position: absolute;
+  background-color: var(--gray-700);
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding:15px;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 3px;
+  background-color: var(--gray-500);
+  border: none;
+  color: var(--white)
+}
+
+.button:hover{
+  background-color: var(--gray-600);
+}
+
+#result {
+  width: 207px;
+  background-color: var(--white);
+  height:30px;
+  margin: 5px;
+  font-size:  25px;
+  color: black;
+  text-align: right;
+  padding:5px;
+}
+
+
