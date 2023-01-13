@@ -1,0 +1,53 @@
+:root {
+  --background: #2e2d2d;
+  --pink-400: #932988;
+  --pink-500: #881d88;
+  --white: #ffffff;
+  --gray-200: #c7c7c7;
+  --gray-350: #878787;
+  --gray-400: #626262;
+  --gray-500: #545454;
+  --gray-600: #474747;
+  --gray-700: #3b3b3b;
+}
+
+
+* {
+  font-family: 'Tourney', cursive;
+}
+
+.main-container {
+  align-items: center;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+h1 {
+  color: var(--gray-400);
+  letter-spacing: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 295px;
+  align-items: center;
+  justify-content: center;
+}
+
+.banderinha {
+  color: var(--pink-500);
+  letter-spacing: 0;
+  text-shadow: 0px 0px 10px var(--pink-500);
+}
+
+.blink {
+  color: var(--pink-500);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  to{opacity: .0;}
+}

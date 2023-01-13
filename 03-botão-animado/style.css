@@ -1,0 +1,116 @@
+:root {
+  --background: #2e2d2d;
+  --pink-400: #932988;
+  --pink-500: #881d88;
+  --white: #ffffff;
+  --gray-200: #c7c7c7;
+  --gray-350: #878787;
+  --gray-400: #626262;
+  --gray-500: #545454;
+  --gray-600: #474747;
+  --gray-700: #3b3b3b;
+}
+
+* {
+  font-family: 'Tourney', cursive;
+}
+
+.main-container {
+  align-items: center;
+  background-color: var(--gray-200);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.neon-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--pink-400);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.2s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.neon-btn:hover {
+  background-color: var(--pink-500);
+  color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--pink-500), 
+              0 0 25px var(--pink-500),
+              0 0 50px var(--pink-500),
+              0 0 100px var(--pink-500);
+}
+
+.neon-btn span {
+  position: absolute;
+  display: block;
+}
+
+.neon-btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--pink-500));
+  animation: btn_animation 1s linear infinite;
+}
+
+@keyframes btn_animation {
+  0%{left: -100%;}
+  50%, 100% {left: 100%;}
+}
+
+.neon-btn span:nth-child(2) {
+  top: -100;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--pink-500));
+  animation: btn_animation1 1s linear infinite;
+  animation-delay: .25s;
+}
+
+@keyframes btn_animation1 {
+  0%{top: -100%;}
+  50%, 100% {top: 100%;}
+}
+
+
+.neon-btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--pink-500));
+  animation: btn_animation2 1s linear infinite;
+  animation-delay: .5s;
+}
+
+@keyframes btn_animation2 {
+  0%{right: -100%;}
+  50%, 100% {right: 100%;}
+}
+
+.neon-btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--pink-500));
+  animation: btn_animation3 1s linear infinite;
+  animation-delay: .75s;
+}
+
+@keyframes btn_animation3 {
+  0%{bottom: -100%;}
+  50%, 100% {bottom: 100%;}
+}
